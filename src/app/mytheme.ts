@@ -314,17 +314,17 @@ export const CustomPreset = definePreset(Lara, {
     iconSize: '1rem',
     anchorGutter: '2px',
     primary: {
-      50: '#ecfdf5',
-      100: '#d1fae5',
-      200: '#a7f3d0',
-      300: '#6ee7b7',
-      400: '#34d399',
-      500: '#10b981',
-      600: '#059669',
-      700: '#047857',
-      800: '#065f46',
-      900: '#064e3b',
-      950: '#022c22'
+      50: "#f2fcf9",
+      100: "#c2f0e1",
+      200: "#91e3ca",
+      300: "#61d7b3",
+      400: "#30cb9b",
+      500: "#00bf84",
+      600: "#00a270",
+      700: "#00865c",
+      800: "#006949",
+      900: "#004c35",
+      950: "#003021"
     },
     formField: {
       paddingX: '0.75rem',
@@ -436,7 +436,8 @@ export const CustomPreset = definePreset(Lara, {
           focusColor: '{primary.800}'
         },
         focusRing: {
-          shadow: '0 0 0 0.2rem {primary.200}'
+          // shadow: '0 0 0 0.2rem {primary.200}'
+          shadow: 'none'
         },
         mask: {
           background: 'rgba(0,0,0,0.4)',
