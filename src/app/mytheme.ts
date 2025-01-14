@@ -1,22 +1,7 @@
-import { ApplicationConfig } from '@angular/core';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { providePrimeNG } from 'primeng/config';
+
 import Lara from '@primeng/themes/lara';
 import { definePreset } from '@primeng/themes';
 
-export const CustomPreset2 = definePreset(Lara, {
-  primitive: {
-    borderRadius: {
-      none: '0',
-      xs: '2px',
-      sm: '4px',
-      md: '6px',
-      lg: '8px',
-      xl: '16px'
-    },
-  }
-
-});
 export const CustomPreset = definePreset(Lara, {
   extend: {
     itemRadius: '20px'
@@ -26,9 +11,9 @@ export const CustomPreset = definePreset(Lara, {
       none: '0',
       xs: '2px',
       sm: '4px',
-      md: '6px',
+      md: '24px',
       lg: '8px',
-      xl: '16px'
+      xl: '12px'
     },
     emerald: {
       50: '#ecfdf5',
@@ -354,7 +339,7 @@ export const CustomPreset = definePreset(Lara, {
         paddingX: '0.875rem',
         paddingY: '0.75rem'
       },
-      borderRadius: '{extend.itemRadius}',
+      borderRadius: '{border.radius.md}',
       focusRing: {
         width: '{focus.ring.width}',
         style: '{focus.ring.style}',

@@ -1,0 +1,20 @@
+::ng-deep .custom-inputnumber.p-inputnumber.p-inputnumber-horizontal {
+  .p-inputnumber-input {
+    order: 1 !important;
+    border-start-start-radius: var(--p-inputnumber-button-border-radius);
+    border-end-start-radius: var(--p-inputnumber-button-border-radius);
+    border-inline-end: 0 none;
+  }
+  .p-inputnumber-decrement-button{
+    background-color: transparent;
+    order: 2 !important;
+    border-bottom: 1px solid var(--p-inputnumber-button-border-color);
+    border-top: 1px solid  var(--p-inputnumber-button-border-color);
+    border-radius: 0;
+    border-inline-start: 0 none;
+  }
+  .p-inputnumber-increment-button{
+    background-color:transparent;
+    order: 3 !important;
+  }
+}
