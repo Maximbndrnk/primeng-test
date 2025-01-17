@@ -41,3 +41,7 @@ and then
 ```bash
 npm run lint
 ```
+
+```bash
+npm run lintfix
+```
