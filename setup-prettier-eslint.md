@@ -81,11 +81,7 @@ add `/documentation` in `.gitignore` file
 # GraphQl code generator
 
 ```bash
-ng add apollo-angular
-```
-
-```bash
-npm install graphql-cli -D
+npm install @apollo/client graphql apollo-angular
 ```
 
 ```bash
@@ -98,4 +94,16 @@ npm install graphql-cli -D
 
 ```bash
 
+```
+
+```bash
+
+```
+
+```bash
+npm i @angular/cli
+```
+
+```bash
+ng new done-admin-app --routing --style scss
 ```
