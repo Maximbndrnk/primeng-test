@@ -1,3 +1,15 @@
+<p-password [(ngModel)]="value"/>
+
+
+<p-inputgroup>
+  <p-inputnumber [(ngModel)]="number" placeholder="Price"/>
+  <p-inputgroup-addon (click)="click()">$</p-inputgroup-addon>
+  <p-inputgroup-addon>.00</p-inputgroup-addon>
+</p-inputgroup>
+
+
+
+
 <h1>Text</h1>
 <div class="flex flex-col gap-2 w-full">
   <label for="username">Username</label>
@@ -54,6 +66,14 @@
     </div>
   </ng-template>
 </p-select>
+
+<br>
+<p-iconfield>
+  <p-inputicon class="pi pi-lock"/>
+  <input [(ngModel)]="value3" class="w-full" pInputText placeholder="Large"/>
+  <p-inputicon class="pi pi-spin pi-spinner"/>
+</p-iconfield>
+
 
 
 

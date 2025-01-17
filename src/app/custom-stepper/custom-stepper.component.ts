@@ -3,8 +3,6 @@ import { ButtonModule } from 'primeng/button';
 import { StepperModule } from 'primeng/stepper';
 import { InputTextModule } from 'primeng/inputtext';
 import { ToggleButton } from 'primeng/togglebutton';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Password } from 'primeng/password';
@@ -17,8 +15,6 @@ import { Password } from 'primeng/password';
     ButtonModule,
     InputTextModule,
     ToggleButton,
-    IconField,
-    InputIcon,
     CommonModule,
     FormsModule,
     Password
