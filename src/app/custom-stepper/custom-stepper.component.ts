@@ -10,20 +10,12 @@ import { Password } from 'primeng/password';
 @Component({
   standalone: true,
   selector: 'app-custom-stepper',
-  imports: [
-    StepperModule,
-    ButtonModule,
-    InputTextModule,
-    ToggleButton,
-    CommonModule,
-    FormsModule,
-    Password
-  ],
+  imports: [StepperModule, ButtonModule, InputTextModule, ToggleButton, CommonModule, FormsModule, Password],
   templateUrl: './custom-stepper.component.html',
-  styleUrl: './custom-stepper.component.scss'
+  styleUrl: './custom-stepper.component.scss',
 })
 export class CustomStepperComponent {
-  activeStep: number = 1;
+  activeStep = 1;
 
   name: string | undefined = 'null';
 
