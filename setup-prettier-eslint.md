@@ -46,7 +46,7 @@ npm run lint
 npm run lintfix
 ```
 
-add compodoc
+# Add compodoc
 
 ```bash
 npm install @compodoc/compodoc --save-dev
@@ -66,14 +66,8 @@ add file
 
 fill it
 `
-{
-"include": [
-"src/**/*.ts"
-],
-"exclude": [
-"src/**/*.spec.ts" , "src/test.ts"
-]
-}
+{"include": ["src/**/*.ts"],
+"exclude": ["src/**/*.spec.ts" , "src/test.ts"]}
 `
 
 run compodoc
@@ -83,3 +77,25 @@ npm run compodoc
 ```
 
 add `/documentation` in `.gitignore` file
+
+# GraphQl code generator
+
+```bash
+ng add apollo-angular
+```
+
+```bash
+npm install graphql-cli -D
+```
+
+```bash
+
+```
+
+```bash
+
+```
+
+```bash
+
+```
