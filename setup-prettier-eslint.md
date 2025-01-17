@@ -45,3 +45,41 @@ npm run lint
 ```bash
 npm run lintfix
 ```
+
+add compodoc
+
+```bash
+npm install @compodoc/compodoc --save-dev
+```
+
+add script in package.json
+
+`
+scripts:{
+...,
+"e2e": "ng e2e",
+"compodoc": "npx compodoc -p tsconfig.compodoc.json -s"
+}`
+
+add file
+`tsconfig.doc.json`
+
+fill it
+`
+{
+"include": [
+"src/**/*.ts"
+],
+"exclude": [
+"src/**/*.spec.ts" , "src/test.ts"
+]
+}
+`
+
+run compodoc
+
+```bash
+npm run compodoc
+```
+
+add `/documentation` in `.gitignore` file
