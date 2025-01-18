@@ -46,6 +46,7 @@ npm run lint
 npm run lintfix
 ```
 
+------------------------------------
 # Add compodoc
 
 ```bash
@@ -78,28 +79,57 @@ npm run compodoc
 
 add `/documentation` in `.gitignore` file
 
+------------------------------
 # GraphQl code generator
 
 ```bash
 npm install @apollo/client graphql apollo-angular
 ```
 
-```bash
+add in appConfig.ts
+`provideHttpClient(),
+provideApollo(() => {
+const httpLink = inject(HttpLink);`
 
+`      return {
+link: httpLink.create({
+uri: 'http://localhost:4000/graphql',
+}),
+cache: new InMemoryCache(),
+};
+}),
+`
+
+setup tsconfig.json `   "lib": [
+"es2020",
+"dom",
+"esnext",
+"esnext.asynciterable"
+]`
+```bash
+npm install -D @graphql-codegen/cli @graphql-codegen/typescript @graphql-codegen/typescript-operations @graphql-codegen/typescript-apollo-angular graphql
+```
+
+Додайте GraphQL-запити
+Створіть у src/app/graphql/queries.graphql наступний код:
+
+```bash
+npx graphql-codegen
+```
+
+"scripts": {
+"generate": "graphql-codegen --watch"
+}
+
+```bash
+npm run generate
 ```
 
 ```bash
 
 ```
 
-```bash
-
-```
-
-```bash
-
-```
-
+-----------------------------------
 ```bash
 npm i @angular/cli
 ```

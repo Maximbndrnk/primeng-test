@@ -4,6 +4,7 @@ import { TextInputComponent } from './text-input/text-input.component';
 import { NumberInputComponent } from './number-input/number-input.component';
 import { CustomStepperComponent } from './custom-stepper/custom-stepper.component';
 import { UserService } from './user.service';
+import { GraphqlService } from './graphql/graphql.service';
 
 @Component({
   selector: 'app-root',
@@ -14,10 +15,25 @@ import { UserService } from './user.service';
 export class AppComponent {
   title = 'primeng-test';
 
-  constructor(private userService: UserService) {
+  constructor(
+    private userService: UserService,
+    private graphqlService: GraphqlService
+  ) {
     this.userService.getUsers().subscribe((result: any) => {
       // this.users = result.data.users;
-      console.log(result.data);
+      console.log('OLD', result.data);
     });
+    this.addUser();
+  }
+
+  loadUsers() {
+    this.graphqlService.getUsers().subscribe(({ data }) => {
+      // this.users = data.users;
+      console.log('LOGG', data.users);
+    });
+  }
+
+  addUser() {
+    this.graphqlService.createUser('New User', 'new@example.com', 'password123').subscribe(() => this.loadUsers());
   }
 }
